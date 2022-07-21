@@ -1,4 +1,7 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+
 * {
 
   box-sizing: border-box;
@@ -9,4 +12,8 @@
 body {
 
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+
 }
+
+

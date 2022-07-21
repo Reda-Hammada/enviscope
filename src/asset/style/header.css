@@ -7,14 +7,22 @@
     padding: 0;
 }
 
+.ultimate_container {
+
+    width: 100%;
+}
+
 /* desktop navbar */
 
 .nav_bar {
 
-    margin-top: 2%;
+    padding-top: 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    
+    background-color: #FFF;
 
 }
 

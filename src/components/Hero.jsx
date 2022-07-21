@@ -1,39 +1,60 @@
 import React,{Component} from 'react';
-import image from '../asset/images/eng.jpg';
 import '../asset/style/hero.css';
 
 
 class Hero extends Component{
 
- 
+    
 
         render(){
 
            
-            const imageStyle = {
+                const heroStyle = {
 
-                backgroundImage:`url(${image})`,
-                backgroundRepeat:"no-repeat",
-                backgroundSize:"contain",
-                height:"100vh",
-                width:"100wh"
+                    container: {
+                    textAlign: 'center',
+                    width: "100%",
+                    height:"fit-content",
+                    padding: "5% 5%",
+                    backgroundColor:"whiteSmoke"
                 
-                
-            }
-            const container = {
+
+                    }, 
+
+
+                    heroHeader: {
+
+                        marginBottom:"3%",
+                        fontWeight:"lighter",
+                        fontSize:'1.6rem'
+                    },
+
+                    heroParagraph: {
+
+                        width:"70%",
+                        marginLeft:'auto',
+                        marginRight:'auto'
+
+                    }
+
 
                 
-            }
-
+                }    
+            
             return(
 
             <main>
-                <section  style={imageStyle}   >
-                    <div >
+                
+               <section style={heroStyle.container} >
+                <div>
+                    <h1 style={heroStyle.heroHeader}>Bienvenue</h1>
+                    <p style={heroStyle.heroParagraph}>
 
-                    </div>
+                        Nous réalisons pour vous un projet personnalisé et sur mesure dont vous resterez seul décideur à tous stade d’avancement du projet.
 
-                </section>
+                    </p>
+                </div>
+               </section>
             </main>
 
             );

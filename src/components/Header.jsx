@@ -1,6 +1,8 @@
 import React,{Component, Fragment} from 'react';
 import '../asset/style/header.css'
 import Logo from '../asset/images/logo.jpg';
+import image from '../asset/images/BE.jpg';
+
 
 
 
@@ -20,10 +22,20 @@ class Header extends Component {
     
     render(){
 
+                   const background = {
+
+                    backgroundImage:`url(${image})`,
+                    backgroundRepeat:"no-repeat",
+                    backgroundSize:"cover",
+                    height:"80vh",
+                    width:"100%"
+                    
+                }
+                        
 
        return(
 
-        <header>
+        <header className='ultimate_container'>
             <nav className='nav_bar'>
                 <div>
 
@@ -68,6 +80,12 @@ class Header extends Component {
                     </div>
                     ) :null}
                 </nav>
+
+                <section  style={background}   >
+                    <div >
+                    </div>
+
+                </section>
 
             
         </header>
