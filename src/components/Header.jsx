@@ -30,14 +30,13 @@ class Header extends Component {
                     <img src={Logo} alt= 'enviscope logo' />
 
                 </div>
-                <div >
+                <div className='burger_bar'>
                     <i onClick={this.onShow} class="fa-solid fa-bars"></i>
 
                 </div>
 
                   
-               <div className='nav_list_container'>
-
+               
                     <ul className='nav_list'>
                         <Fragment >
                             <li>ACCUEIL</li>
@@ -50,7 +49,7 @@ class Header extends Component {
 
                         </ul>
 
-               </div>
+               
             
             </nav>
 
