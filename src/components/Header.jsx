@@ -56,7 +56,7 @@ class Header extends Component {
                             <a href="#competences"><li>NOS COMPETENCES</li></a>
                             <a href='./References.js'><li>NOS RÉFÉRENCES</li></a>
                             <li>PROJET EN COURS</li>
-                            <li>CONTACT</li>
+                            <a href="#contact"><li>CONTACT</li></a>
 
                         </ Fragment>
 

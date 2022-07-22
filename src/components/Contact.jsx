@@ -14,6 +14,7 @@ class Contact extends Component{
             ultimateContainer : {
 
                 backgroundColor :"#fff",
+                marginBottom:"5%"
 
             },
 
@@ -76,7 +77,7 @@ class Contact extends Component{
 
         return (
 
-            <section style={contact.ultimateContainer} className="contact_section">
+            <section id="contact" style={contact.ultimateContainer} className="contact_section">
                 <div style={contact.headpara}>
                     <h2 style={contact.heading}>Entrer en contact</h2>
                     <p style={contact.paragraph}>Nous croyons que la durabilité est d'une importance vitale.</p>
