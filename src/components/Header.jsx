@@ -51,9 +51,10 @@ class Header extends Component {
                
                     <ul className='nav_list'>
                         <Fragment >
-                            <li>ACCUEIL</li>
-                            <li>NOS COMPETENCES</li>
-                            <li>NOS RÉFÉRENCES</li>
+
+                            <a href='./App.js'><li>ACCUEIL</li></a>
+                            <a href="#competences"><li>NOS COMPETENCES</li></a>
+                            <a href='./References.js'><li>NOS RÉFÉRENCES</li></a>
                             <li>PROJET EN COURS</li>
                             <li>CONTACT</li>
 
@@ -70,7 +71,7 @@ class Header extends Component {
                     <div className='list'>
                     <ul>
                         <li>ACCUEIL</li>
-                        <li>NOS COMPETENCES</li>
+                        <li><a href="#competences">NOS COMPETENCES</a></li>
                         <li>NOS RÉFÉRENCES</li>
                         <li>PROJET EN COURS</li>
                         <li>CONTACT</li>

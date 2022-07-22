@@ -33,6 +33,7 @@
 .nav_bar ul li {
 
     list-style: none;
+
     display: inline;
     margin-left: 10px;
     height: 70px;
@@ -41,13 +42,26 @@
 
 }
 
+.nav_bar ul li {
+
+    list-style-type: none;
+    color:black
+}
+.nav_bar ul a {
+
+    text-decoration: none;
+}
+
 .nav_bar ul li:hover {
 
         cursor: pointer;
         background-color: #002060;
-        color: #FFF;
+        color: #fff;
         background-size: 200px 120px;
 }
+
+
+
 
 /* desktop navbar */
 
@@ -97,6 +111,7 @@
 
         display: none;
     } 
+
 
     .nav_mobile {
 

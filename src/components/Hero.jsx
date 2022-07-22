@@ -26,14 +26,15 @@ class Hero extends Component{
 
                         marginBottom:"3%",
                         fontWeight:"lighter",
-                        fontSize:'1.6rem'
+                        fontSize:'2rem'
                     },
 
                     heroParagraph: {
 
                         width:"70%",
                         marginLeft:'auto',
-                        marginRight:'auto'
+                        marginRight:'auto',
+                        fontSize:'1.4rem',
 
                     }
 
