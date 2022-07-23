@@ -20,6 +20,10 @@ class Header extends Component {
         console.log('it worked');
     }
     
+    constructor(props) {
+
+        super(props)
+    }
     render(){
 
                    const background = {
@@ -52,10 +56,10 @@ class Header extends Component {
                     <ul className='nav_list'>
                         <Fragment >
 
-                            <a href='./App.js'><li>ACCUEIL</li></a>
+                            <a><li>ACCUEIL</li></a>
                             <a href="#competences"><li>NOS COMPETENCES</li></a>
-                            <a href='./References.js'><li>NOS RÉFÉRENCES</li></a>
-                            <li>PROJET EN COURS</li>
+                            <a href='src\components\References.jsx'><li>REFERECNES</li></a>
+                            <a><li>PROJET EN COURS</li></a>
                             <a href="#contact"><li>CONTACT</li></a>
 
                         </ Fragment>

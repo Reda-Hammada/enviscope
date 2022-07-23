@@ -8,13 +8,19 @@ class Footer extends Component {
 
             backgroundColor:"#002060",
             color:"#FFF",
+            height:"fit-content",
+            width:"100%",
+          
+        }
+
+        const container = {
+
             display:"flex",
             justifyContent:"space-around",
-            witdth:"100%",
+            width:"90%",
             flexWrap:"wrap",
-            
-            height:"fit-content",
 
+           
         }
 
 
@@ -22,52 +28,62 @@ class Footer extends Component {
 
             width:"5%",
             marginTop:"5%",
-            marginRight:"20%",
+            marginRight:"30%",
             marginBottom:"5%",
+            
 
         }
 
         const assist = {
             marginTop:"5%",
-            textAlign:"center",
+            width:"30%",
 
         }
 
         const competences = {
             marginTop:"5%",
+            width:"30%",
+
         }
 
         const list = {
 
             listStyleType:"none",
             textAlign:"start",
+            paddingTop:"4%",
+        }
+
+        const li = {
+
             paddingTop:"2%",
         }
         return(
             <footer style={footer}>
-                <div  style={assist}>
-                    <h4>Assitance</h4>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div style={container}>
+                    <div  style={assist}>
+                        <h4>Assitance</h4>
+                        <ul style={list}>
+                            <li style={li}>Accueil</li>
+                            <li style={li}>Références</li>
+                            <li style={li}>Projet en cours</li>
+                            
+                        </ul>
 
 
-                </div>
-                <div style={competences}>
-                    <h4>Compétences</h4>
-                    <ul style={list}>
-                        <li>Etudes d’impact sur l’environnement</li>
-                        <li>Cartographie numérique et SIG</li>
-                        <li>Diagnostics et Etudes de Faisabilité</li>
-                        <li></li>
-                    </ul>
+                    </div>
+                    <div style={competences}>
+                        <h4>Compétences</h4>
+                        <ul style={list}>
+                            <li style={li}>Etudes d’impact sur l’environnement</li>
+                            <li style={li}>Cartographie numérique et SIG</li>
+                            <li style={li}>Diagnostics et Etudes de Faisabilité</li>
+                            <li style={li}>Formation et accompagnement</li>
+                        </ul>
 
-                </div>
-                <div style={map} >
-                    <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=35.773578,-5.810921&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                    <div style={map} >
+                        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=35.773578,-5.810921&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
                 </div>
 
             </footer>

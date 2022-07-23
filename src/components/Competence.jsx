@@ -13,7 +13,6 @@ class Competence extends Component {
             ultimateContainer:{
             
                 width:"100%",
-            
                 backgroundColor: "#002060",
              
 
@@ -23,6 +22,7 @@ class Competence extends Component {
 
                 display:"flex",
                 flexDirection:"row",
+                marginRight:"auto",
                 width:"100%",
                 justifyContent:"space-evenly",
                 paddingTop:'5%',

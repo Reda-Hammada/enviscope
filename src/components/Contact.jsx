@@ -1,4 +1,3 @@
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import React,{Component, Fragment} from 'react';
 import phone from '../asset/images/phone.png';
 import email from '../asset/images/email.png';

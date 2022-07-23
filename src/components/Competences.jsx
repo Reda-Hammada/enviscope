@@ -5,11 +5,6 @@ import '../asset/style/competences.css'
 class Competences  extends Component {
 
 
-    constructor(props){
-
-        super(props)
-    }
-
   
 
     render(){
