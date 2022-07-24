@@ -7,12 +7,15 @@ class Projet extends Component {
 
 
     render () {
-
-
+        const data = require('../references/projet.json');
+        console.log(data);
         return (
 
             <Fragment> 
                 <Header />
+                <section className="ultimateContainer">
+
+                </section>
             </Fragment>
         )
     }
