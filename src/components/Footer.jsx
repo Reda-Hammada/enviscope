@@ -1,4 +1,9 @@
 import React,{Component} from 'react';
+import { Link } from 'react-router-dom';
+import { Fragment } from 'react';
+import '../asset/style/header.css';
+
+
 
 class Footer extends Component {
 
@@ -37,7 +42,14 @@ class Footer extends Component {
         const assist = {
             marginTop:"5%",
             width:"30%",
+         
 
+        }
+
+        const a = {
+
+            textDecoration:"none",
+            color:"#fff",
         }
 
         const competences = {
@@ -62,12 +74,15 @@ class Footer extends Component {
                 <div style={container}>
                     <div  style={assist}>
                         <h4>Assitance</h4>
-                        <ul style={list}>
-                            <li style={li}>Accueil</li>
-                            <li style={li}>Références</li>
-                            <li style={li}>Projet en cours</li>
-                            
+                        <ul >
+
+                            <li style={list}><Link  style={a} to='/'>ACCUEIL</ Link></li>
+                            <li style={list}><Link  style={a} to='/references'>REFERECNES</ Link></li>
+                            <li style={list}><Link  style={a} to='/projet'>PROJET EN COURS</ Link></li>
+
+
                         </ul>
+
 
 
                     </div>

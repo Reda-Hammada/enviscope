@@ -2,6 +2,7 @@ import React,{Component, Fragment} from 'react';
 import '../asset/style/header.css'
 import Logo from '../asset/images/logo.jpg';
 import image from '../asset/images/BE.jpg';
+import {Link} from 'react-router-dom';
 
 
 
@@ -56,10 +57,10 @@ class Header extends Component {
                     <ul className='nav_list'>
                         <Fragment >
 
-                            <a><li>ACCUEIL</li></a>
+                        <li><Link to='/'>ACCUEIL</ Link></li>
                             <a href="#competences"><li>NOS COMPETENCES</li></a>
-                            <a href='src\components\References.jsx'><li>REFERECNES</li></a>
-                            <a><li>PROJET EN COURS</li></a>
+                            <li><Link to='/references'>REFERECNES</ Link></li>
+                            <li><Link to='/projet'>PROJET EN COURS</ Link></li>
                             <a href="#contact"><li>CONTACT</li></a>
 
                         </ Fragment>
@@ -74,10 +75,10 @@ class Header extends Component {
                     {this.state.showList ?(
                     <div className='list'>
                     <ul>
-                        <li>ACCUEIL</li>
+                        <li><Link to='/'>ACCUEIL</ Link></li>
                         <li><a href="#competences">NOS COMPETENCES</a></li>
-                        <li>NOS RÉFÉRENCES</li>
-                        <li>PROJET EN COURS</li>
+                        <li><Link to='/references'>REFERECNES</ Link></li>
+                        <li><Link to='/projet'>PROJET EN COURS</ Link></li>
                         <li>CONTACT</li>
 
 

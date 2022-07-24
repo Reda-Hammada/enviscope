@@ -1,4 +1,6 @@
 import React,{Component}  from 'react';
+import { Fragment } from 'react';
+import Header from './Header';
 
 
 class Projet extends Component { 
@@ -9,9 +11,9 @@ class Projet extends Component {
 
         return (
 
-            <div>
-                <h1>hello</h1>
-            </div>
+            <Fragment> 
+                <Header />
+            </Fragment>
         )
     }
 }
