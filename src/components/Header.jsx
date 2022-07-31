@@ -18,7 +18,6 @@ class Header extends Component {
     onShow = () => {
 
         this.setState({showList: !this.state.showList});
-        console.log('it worked');
     }
     
     constructor(props) {
