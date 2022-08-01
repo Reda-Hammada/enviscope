@@ -10,6 +10,7 @@
 .ultimate_container {
 
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* desktop navbar */
@@ -126,6 +127,7 @@
         transition-timing-function: linear;
         margin-bottom: 30px;
         width: 100%;
+        overflow-x: hidden;
 
 
 
