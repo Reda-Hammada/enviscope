@@ -20,7 +20,7 @@
     padding-top: 2%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
     
     background-color: #FFF;
@@ -101,6 +101,7 @@
 
     width: 260px;
     height: 75px;
+    margin-bottom: 5%;
 }
 
 /* mobile & tablet navbar */
