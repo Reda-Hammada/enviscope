@@ -32,7 +32,7 @@ class Header extends Component {
                     backgroundRepeat:"no-repeat",
                     backgroundSize:"cover",
                     height:"80vh",
-                    width:"100%"
+                    width:"100wh"
                     
                 }
                         
