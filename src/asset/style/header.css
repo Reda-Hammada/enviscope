@@ -18,9 +18,9 @@
 .nav_bar {
 
     padding-top: 2%;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     
     background-color: #FFF;
