@@ -12,11 +12,12 @@
 html {
 
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 body {
 
-  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   width: 100%;
 
