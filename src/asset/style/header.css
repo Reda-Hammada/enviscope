@@ -118,7 +118,10 @@
         display: none;
     } 
 
+    .nav_bar {
 
+        width:100wh;
+    }
     .nav_mobile {
 
         display: flex;
