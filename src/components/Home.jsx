@@ -12,7 +12,6 @@ function Home() {
 
   return (
     <Fragment >
-        <Comp />
         <Header />
         <Hero />
         <Competence />
