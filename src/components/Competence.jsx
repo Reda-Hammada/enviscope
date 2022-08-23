@@ -111,8 +111,8 @@ class Competence extends Component {
     const paragraph = {
 
         marginBottom:"5%",
-        marginRight:"2%",
-        marginLeft:"2%",
+        marginRight:"5%",
+       
     }
 
     
