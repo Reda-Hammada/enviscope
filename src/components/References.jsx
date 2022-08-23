@@ -2,10 +2,32 @@ import React,{Component}  from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { Fragment } from 'react';
+import axios from 'axios';
 
 class References extends Component { 
 
+        constructor(props){
+            super(props);
+            this.state = {
 
+                references:[],
+            }
+        }
+
+        componentDidMount(){
+
+            let url = "https://enviscope.herokuapp.com/api/reference/";
+
+            axios.get(url)
+
+            .then(response =>{
+
+                this.setState({
+
+                    references:response.data,
+                })
+            })
+        }
     render () {
         const dataContainer = {
 
@@ -33,19 +55,19 @@ class References extends Component {
                 width:"100%",
         }
 
-        const data = require('../references/references.json');
 
         return (
+            
             <Fragment >
                 <Header />
                 <section style={ultimateContainer} >
                     <h1 style={heading}>Références</h1>
                     <div className="container">
                       
-                    {data.map((reference) =>(
+                    {this.state.references.map((reference) =>(
 
                                 <div style={dataContainer}>
-                                    <p>{reference}</p><br />
+                                    <p>{reference.year}: {reference.reference}</p><br />
                                 </div>
                     ))}
 

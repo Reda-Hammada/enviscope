@@ -1,10 +1,37 @@
 import React,{Component} from 'react';
 import '../asset/style/hero.css';
+import axios from 'axios';
 
 
 class Hero extends Component{
 
-    
+    constructor(props){
+
+        super(props);
+
+       this.state = {
+
+            bienvenue:[],
+        };
+
+    }
+        componentDidMount(){
+            
+            let url ="https://enviscope.herokuapp.com/api/bienvenue";
+
+            axios.get(url)
+
+            .then( response => {
+
+                this.setState({ 
+
+                    bienvenue:response.data
+                
+                });
+            })
+
+        }
+
 
         render(){
 
@@ -51,8 +78,14 @@ class Hero extends Component{
                     <h1 style={heroStyle.heroHeader}>Bienvenue</h1>
                     <p style={heroStyle.heroParagraph}>
 
-                        Nous réalisons pour vous un projet personnalisé et sur mesure dont vous resterez seul décideur à tous stade d’avancement du projet.
-
+                        {
+                            this.state.bienvenue
+                            .map(bienvenue =>
+                                
+                                <p>{bienvenue.bien}</p>
+                                
+                                )
+                        }
                     </p>
                 </div>
                </section>

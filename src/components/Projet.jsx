@@ -2,10 +2,35 @@ import React,{Component}  from 'react';
 import { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-
+import axios from "axios";
 
 class Projet extends Component { 
 
+
+    constructor(props){
+
+        super(props);
+
+        this.state = {
+
+            projects:[],
+        }
+    }
+
+    componentDidMount(){
+
+        let url = "https://enviscope.herokuapp.com/api/projet";
+
+         axios.get(url)
+
+         .then(res=>{
+
+            this.setState({
+
+                projects:res.data,
+            })
+        })
+    }
 
     render () {
         const dataContainer = {
@@ -33,7 +58,8 @@ class Projet extends Component {
                 textAlign:"center",
                 width:"100%",
         }
-        const data = require('../references/projet.json');
+
+      
         return (
             
             <Fragment> 
@@ -42,10 +68,11 @@ class Projet extends Component {
                     <h1 style={heading}>Projets en cours</h1>
                        
                         <div >
-                        {data.map((projet) =>(
+                        {this.state.projects.map((projet) =>(
                             <div style={dataContainer}>
-                                <p>{projet}</p>
-
+                              
+                                     <p>En cours: {projet.project}</p>
+                               
                             </div>
                                   ))}
                         </div>
